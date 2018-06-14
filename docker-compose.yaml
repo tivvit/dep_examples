@@ -6,3 +6,20 @@ services:
     volumes:
     - "$PWD/python:/demo"
     command: bash
+  js:
+    image: node
+    working_dir: /demo
+    volumes:
+    - "$PWD/js:/demo"
+    command: bash
+  rust:
+    image: rust
+    working_dir: /demo
+    volumes:
+    - "$PWD/rust:/demo"
+    command: bash
+  go:
+    image: golang
+    volumes:
+    - "$PWD/go:/demo"
+    command: bash
